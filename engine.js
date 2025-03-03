@@ -765,6 +765,12 @@ function onKeyPress(event) {
         case "d": // toggle debug
             debug = !debug;
             break;
+        case "h": // toggle hints
+            {
+                const x = document.querySelector(".controls-hint");
+                x.style.display = x.style.display === "none" ? "block" : "none";
+                break;
+            }
         case "+": // add gravity
             gravity.y += 1;
             break;
